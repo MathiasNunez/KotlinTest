@@ -31,7 +31,7 @@ class FirstFragment : Fragment() {
         }
 
         text.text = "Changed in code using Kotlin Extensions"
-        
+
 
     }
 

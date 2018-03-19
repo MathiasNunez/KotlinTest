@@ -1,11 +1,11 @@
 package com.kotlin.test.activities
 
 import android.content.Context
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
+import android.support.v7.app.AppCompatActivity
 import com.kotlin.test.R
 import com.kotlin.test.fragments.FirstFragment
+import test.kotlin.com.kotlinlibtest.LibTest
 
 class HomeActivity : AppCompatActivity(), FirstFragment.FragmentListener {
 
@@ -25,6 +25,6 @@ class HomeActivity : AppCompatActivity(), FirstFragment.FragmentListener {
     }
 
     fun Any.showToast(context: Context) {
-        Toast.makeText(context, this.toString(), Toast.LENGTH_LONG).show()
+        LibTest.testLib(context, "it works!")
     }
 }
